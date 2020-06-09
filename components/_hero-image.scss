@@ -1,0 +1,42 @@
+.hero-image {
+  background-image: url('https://placeimg.com/1280/720/nature');
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  &__transparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
+  }
+  &__perfil {
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 5.625em;
+    margin: 0 0 2.5rem 0;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: 3.75em;
+    margin: 0 auto;
+    font-weight: 600;
+  }
+
+  &__img-perfil {
+    position: absolute;
+    bottom: 20%;
+  }
+
+  &__img-perfil--img {
+    width: 12.5em;
+    border-radius: 100%;
+    vertical-align: top;
+  }
+}

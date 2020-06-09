@@ -1,0 +1,115 @@
+.skills {
+  padding-bottom: 50px;
+  @include box-green-light;
+  &__title {
+    @include title($Font2);
+    text-align: center;
+    padding-top: 90px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.skills-container {
+  width: 50%;
+  margin: 50px auto 0;
+  padding: 20px;
+
+  li {
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  li:before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(54, 126, 223, 0.5);
+    border-radius: 1000px;
+  }
+
+  li:after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0%;
+    height: 15px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+
+  li.html:after {
+    animation-name: html;
+  }
+  @keyframes html {
+    to {
+      width: 70%;
+    }
+  }
+
+  li.css:after {
+    animation-name: css;
+  }
+  @keyframes css {
+    to {
+      width: 65%;
+    }
+  }
+
+  li.js:after {
+    animation-name: js;
+  }
+  @keyframes js {
+    to {
+      width: 60%;
+    }
+  }
+
+  li.angular:after {
+    animation-name: angular;
+  }
+  @keyframes angular {
+    to {
+      width: 45%;
+    }
+  }
+
+  li.react:after {
+    animation-name: react;
+  }
+  @keyframes react {
+    to {
+      width: 60%;
+    }
+  }
+
+  li.next:after {
+    animation-name: next;
+  }
+  @keyframes next {
+    to {
+      width: 60%;
+    }
+  }
+
+  li.vue:after {
+    animation-name: vue;
+  }
+  @keyframes vue {
+    to {
+      width: 45%;
+    }
+  }
+}

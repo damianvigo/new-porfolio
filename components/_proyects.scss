@@ -1,0 +1,39 @@
+.proyects {
+  background-color: transparent;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title-head {
+    font-size: 2.1875em;
+    margin: 50px 0;
+    @include title($Font2);
+  }
+  &__container {
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 50px;
+    align-items: flex-end;
+  }
+  &__images__img {
+    width: 100%;
+    vertical-align: top;
+  }
+  &__description {
+    text-align: center;
+    display: block;
+    margin: 1.25em 0;
+    font-size: 1em;
+  }
+  &__icon {
+    font-size: 1.875em;
+  }
+  &__container-link {
+    display: flex;
+    justify-content: center;
+  }
+}

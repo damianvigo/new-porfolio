@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/font-awesome.min.css" />
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Layout 1</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <section class="hero-image">
+    <div class="hero-image__transparent">
+      <div class="hero-image__perfil">
+        <h1 class="hero-image__title">Hola, soy Damián Vigo</h1>
+        <h2 class="hero-image__subtitle">Desarrollador Web</h2>
+      </div>
+      <figure class="hero-image__img-perfil">
+        <img class="hero-image__img-perfil--img" src="./img/yo.jpg" alt="">
+      </figure>
+    </div>
+  </section>
+
+  <header class="header">
+    <a href="" class="header__logo">Logo</a>
+    <nav class="haeder__menu">
+      <ul class="header__menu-ul">
+        <li class="header__menu-li"><a class="header__menu-a" href="#">Bienvenido</a></li>
+        <li class="header__menu-li"><a class="header__menu-a" href="./pages/proyects.html">Proyectos</a></li>
+        <li class="header__menu-li"><a class="header__menu-a" href="#">Sobre Mi</a></li>
+        <li class="header__menu-li"><a class="header__menu-a" href="#">Conectemos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main class="main">
+
+    <section class="perfil">
+      <h2 class="perfil__title-me">¿Quién Soy?</h2>
+      <article class="perfil__description-me">
+        <p class="perfil__text-me">¡Hola! 👋 Me llamo Damián Vigo y soy Desarrollador web de Buenos Aires Argentina.
+          Actualmente me encuentro mejorando mis conocimientos en tecnologías frontend y aprendiendo algunas cosas sobre
+          backend.
+          Apasionado por la tecnología, el código, el deporte y el diseño.</p>
+      </article>
+    </section>
+
+    <article class="skills">
+      <h2 class="skills__title">Habilidades</h2>
+      <div class="skills-container">
+        <ul>
+          <li class="html">HTML</li>
+          <li class="css">CSS-SASS-STYLUS-LESS</li>
+          <li class="js">JavaScript</li>
+          <li class="angular">Angular</li>
+          <li class="react">React</li>
+          <li class="next">NextJs</li>
+          <li class="vue">VueJs</li>
+        </ul>
+      </div>
+    </article>
+
+    <div class="cite-container">
+      <article class="cite-container__cite">
+        <h2 class="cite-container__davinci">
+          La simplicidad es la máxima sofisticación Leonardo Da Vinci
+        </h2>
+      </article>
+    </div>
+
+    <div class="container">
+      <section class="main-proyects">
+        <article class="main-proyects__title-description main-proyects__flex-order-1">
+          <h2>Titulo</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Deserunt quod, enim accusantium officiis, suscipit ea delectus ipsam et aperiam mollitia, laudantium beatae
+            dignissimos recusandae corrupti iusto aliquid nemo sint dolorum?</p>
+          <a class="main-proyects__a" href=""><i class="main-proyects__i"></i></a>
+        </article>
+        <article class="main-proyects__mockup">
+          <figure class="main-proyects__thumbnail">
+            <img class="main-proyects__img" src="https://placeimg.com/400/400/people" alt="">
+          </figure>
+        </article>
+      </section>
+
+      <section class="main-proyects">
+        <article class="main-proyects__title-description">
+          <h2>Titulo</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Deserunt quod, enim accusantium officiis, suscipit ea delectus ipsam et aperiam mollitia, laudantium beatae
+            dignissimos recusandae corrupti iusto aliquid nemo sint dolorum?</p>
+          <a class="main-proyects__a" href=""><i class="main-proyects__i"></i>aaa</a>
+        </article>
+        <article class="main-proyects__mockup">
+          <figure class="main-proyects__thumbnail">
+            <img class="main-proyects__img" src="https://placeimg.com/400/400/people" alt="">
+          </figure>
+        </article>
+      </section>
+    </div>
+
+    <article class="container-button">
+      <button class="button">
+        Más Proyectos
+        <span class="button__span"></span>
+      </button>
+    </article>
+
+  </main>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>SIDEBAR</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cum ab qui, esse, ad animi modi ut soluta, hic
+        veritatis deleniti debitis ipsam sit odit optio. Rerum voluptatum assumenda repudiandae.</p>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <section class="footer__social-network">
+      <div class="footer__container-icon">
+        <a href="https://www.facebook.com/ddamianvigo" target="_blank" rel="noopener" class="footer__fb">
+          <i class="fab fa-facebook footer__icon"></i>
+        </a>
+      </div>
+      <div class="footer__container-icon">
+        <a href="https://platzi.com/@Damian" target="_blank" rel="noopener" class="footer__platzi">
+          <i class="fas fa-graduation-cap footer__icon"></i>
+        </a>
+      </div>
+      <div class="footer__container-icon">
+        <a href="https://github.com/damianvigo" target="_blank" rel="noopener" class="footer__github">
+          <i class="fab fa-github footer__icon"></i>
+        </a>
+      </div>
+    </section>
+    <div class="footer__author">
+      <p>Damián Vigo &copy; 2020</p>
+    </div>
+  </footer>
+
+
+
+  <script src="https://kit.fontawesome.com/e36e673736.js" crossorigin="anonymous"></script>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

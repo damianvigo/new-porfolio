@@ -1,0 +1,14 @@
+.perfil {
+  background-color: #cccccc;
+  width: 100%;
+}
+
+.perfil__title-me {
+  text-align: center;
+  margin: 20px;
+}
+
+.perfil__description-me {
+  width: 50%;
+}
+/*# sourceMappingURL=perfil.css.map */

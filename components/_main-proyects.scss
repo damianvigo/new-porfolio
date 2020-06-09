@@ -1,0 +1,19 @@
+.main-proyects {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  &__title-description {
+    width: 40%;
+  }
+  &__thumbnail {
+    margin: 0;
+    padding: 0;
+  }
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+  &__flex-order-1 {
+    order: 1;
+  }
+}
