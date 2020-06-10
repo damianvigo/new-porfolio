@@ -1,8 +1,6 @@
 .footer {
-  background-color: #666;
-  width: 100vw;
-  min-height: 30vh;
-
+  background-color: $color-secundary;
+  width: 100%;
   &__social-network {
     display: flex;
     align-items: center;
@@ -23,7 +21,7 @@
     border-radius: 100px;
     transition: 0.3s ease all;
     i {
-      font-size: 20px;
+      font-size: 1.25em;
       line-height: 60px;
     }
   }
@@ -52,7 +50,7 @@
   &__author {
     margin-bottom: 40px;
     text-align: center;
-    font-size: 14px;
-    color: #fff;
+    color: $color-variant;
+    @include title($Font1);
   }
 }

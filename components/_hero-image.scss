@@ -26,17 +26,19 @@
   &__subtitle {
     font-size: 3.75em;
     margin: 0 auto;
+    margin-bottom: 3rem;
     font-weight: 600;
   }
 
   &__img-perfil {
     position: absolute;
-    bottom: 20%;
+    left: 0;
+    right: 0;
   }
 
   &__img-perfil--img {
-    width: 12.5em;
     border-radius: 100%;
     vertical-align: top;
+    width: 200px;
   }
 }

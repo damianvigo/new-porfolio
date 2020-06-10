@@ -1,19 +1,52 @@
+.main-title-proyects {
+  &__title {
+    text-align: center;
+    @include title($Font2);
+    @include box;
+  }
+}
+
 .main-proyects {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  &__title-description {
-    width: 40%;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+
+  &__container {
+    margin: 40px 0;
+    text-align: center;
+    flex: 0 0 50%;
+  }
+  &__description {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    line-height: 1.25em;
+  }
+  &__mockup {
+    width: 100%;
   }
   &__thumbnail {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    margin: 0 auto;
   }
   &__img {
-    max-width: 100%;
-    height: auto;
+    cursor: pointer;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
   }
   &__flex-order-1 {
     order: 1;
+  }
+  &__repo--git {
+    margin-right: 10px;
+    @include proyect-icon;
+  }
+  &__repo--globe {
+    @include proyect-icon;
   }
 }

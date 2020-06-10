@@ -9,9 +9,19 @@
     }
   }
 
+  .main-proyects {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    &__flex-order-1 {
+      order: 0;
+    }
+  }
+
   @media screen and (max-width: 992px) {
     body {
-      font-size: 12px;
+      font-size: 13px;
     }
 
     .hero-image {
@@ -48,11 +58,26 @@
         flex-direction: column;
       }
     }
+
+    .hero-image {
+      &__img-perfil--img {
+        width: 100px;
+      }
+    }
   }
 
   @media (max-width: 576px) {
     body {
-      font-size: 10px;
+      font-size: 11px;
+    }
+  }
+  .perfil {
+    &__text-me {
+      width: 100%;
+    }
+    &__description-me {
+      width: 100%;
+      line-height: 1.25rem;
     }
   }
 }
