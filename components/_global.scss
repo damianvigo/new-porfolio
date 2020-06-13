@@ -7,6 +7,7 @@ $color-primary: #666;
 $color-light: #fff;
 $color-secundary: #e9f3d9;
 $color-variant: #000;
+$modal-color: rgba(34, 34, 34, 0.85);
 
 @mixin proyect-icon {
   display: inline-block;
@@ -63,6 +64,7 @@ $color-variant: #000;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .container {

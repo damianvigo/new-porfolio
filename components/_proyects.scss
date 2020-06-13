@@ -10,6 +10,7 @@
     font-size: 2.1875em;
     margin: 50px 0;
     @include title($Font2);
+    @include box;
   }
   &__container {
     max-width: 1500px;
@@ -18,6 +19,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 50px;
     align-items: flex-end;
+    margin: 150px 0;
   }
   &__images__img {
     width: 100%;
@@ -31,6 +33,7 @@
   }
   &__icon {
     font-size: 1.875em;
+    @include proyect-icon;
   }
   &__container-link {
     display: flex;

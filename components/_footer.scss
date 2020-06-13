@@ -1,6 +1,7 @@
 .footer {
   background-color: $color-secundary;
   width: 100%;
+  padding: 1.25em;
   &__social-network {
     display: flex;
     align-items: center;
@@ -12,17 +13,17 @@
   &__platzi,
   &__github {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 3.75em;
+    height: 3.75em;
     background-color: #000;
     color: #fff;
-    margin: 20px;
+    margin: 1.25em;
     text-align: center;
     border-radius: 100px;
     transition: 0.3s ease all;
     i {
       font-size: 1.25em;
-      line-height: 60px;
+      line-height: 3.75rem;
     }
   }
   &__fb {
