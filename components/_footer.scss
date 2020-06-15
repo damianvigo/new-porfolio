@@ -2,6 +2,13 @@
   background-color: $color-secundary;
   width: 100%;
   padding: 1.25em;
+  body.dark & {
+    background: $color-primary;
+    box-shadow: $sombraLight;
+    p {
+      color: $color-light;
+    }
+  }
   &__social-network {
     display: flex;
     align-items: center;
@@ -15,14 +22,13 @@
     display: block;
     width: 3.75em;
     height: 3.75em;
-    background-color: #000;
     color: #fff;
     margin: 1.25em;
     text-align: center;
     border-radius: 100px;
     transition: 0.3s ease all;
     i {
-      font-size: 1.25em;
+      font-size: 1.5em;
       line-height: 3.75rem;
     }
   }
@@ -30,7 +36,11 @@
     background-color: #3b5998;
   }
   &__github {
-    background-color: #333;
+    background-color: $color-primary;
+    body.dark & {
+      background: $color-variant;
+      color: $color-light;
+    }
   }
   &__platzi {
     background-color: #6cc644;

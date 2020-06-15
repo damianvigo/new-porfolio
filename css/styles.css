@@ -22,6 +22,13 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
   overflow-x: hidden;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  color: #fff;
+}
+
+body.dark {
+  background: #333;
 }
 
 p {
@@ -110,6 +117,12 @@ p {
   z-index: 1000;
 }
 
+body.dark .header {
+  background: #333;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
 .header.sticky {
   padding: 5px 100px;
   background-color: #fff;
@@ -119,6 +132,11 @@ p {
 .header.sticky .header__logo {
   color: #000;
   border-bottom: 0px solid #000;
+}
+
+body.dark .header.sticky ul li a, body.dark
+.header.sticky .header__logo {
+  color: #fff;
 }
 
 .header__logo {
@@ -160,7 +178,7 @@ p {
 
 .header__menu-a {
   position: relative;
-  padding: 2.25em;
+  padding: 0.25em;
   color: #fff;
   text-decoration: none;
   font-size: 1.25em;
@@ -168,6 +186,7 @@ p {
   letter-spacing: 2px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  margin: 0 1.5625em;
 }
 
 .header__menu-a:hover {
@@ -178,8 +197,56 @@ p {
 }
 
 .two-page-header {
-  background: #666666;
+  background: #333333;
   height: 150px;
+}
+
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+
+.switch::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: 0.3s ease al;
+  transition: 0.3s ease al;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: orange;
+  color: #333;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch__span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
 }
 
 .panel {
@@ -191,17 +258,21 @@ p {
   bottom: 0;
   right: 0;
   left: 0;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
 }
 
 .panel.is-active {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .panel__menu {
@@ -258,7 +329,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #666;
+  background-color: #367edf;
+  color: #fff;
+  outline: none;
 }
 
 .main {
@@ -272,7 +345,7 @@ p {
   padding: 50px 0;
   -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 5px 9px rgba(0, 0, 0, 0.1);
-  color: #666;
+  color: #333;
   background-color: #fff;
   padding: 60px;
 }
@@ -284,7 +357,7 @@ p {
   font-size: 1.5625em;
   text-transform: uppercase;
   letter-spacing: 0.43em;
-  color: #666;
+  color: #333;
 }
 
 .perfil__description-me {
@@ -340,7 +413,7 @@ p {
   padding-bottom: 50px;
   -webkit-box-shadow: 20px 20px 13px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 20px 20px 13px 0px rgba(0, 0, 0, 0.2);
-  color: #666;
+  color: #333;
   background-color: #e9f3d9;
 }
 
@@ -349,7 +422,7 @@ p {
   font-size: 1.5625em;
   text-transform: uppercase;
   letter-spacing: 0.43em;
-  color: #666;
+  color: #333;
   text-align: center;
   padding-top: 90px;
   margin-top: 50px;
@@ -531,10 +604,10 @@ p {
   font-size: 1.5625em;
   text-transform: uppercase;
   letter-spacing: 0.43em;
-  color: #666;
+  color: #333;
   -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 5px 9px rgba(0, 0, 0, 0.1);
-  color: #666;
+  color: #333;
   background-color: #fff;
   padding: 60px;
 }
@@ -707,10 +780,10 @@ p {
   font-size: 1.5625em;
   text-transform: uppercase;
   letter-spacing: 0.43em;
-  color: #666;
+  color: #333;
   -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 5px 9px rgba(0, 0, 0, 0.1);
-  color: #666;
+  color: #333;
   background-color: #fff;
   padding: 60px;
 }
@@ -768,10 +841,59 @@ p {
   padding: 0;
 }
 
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: calc(4.25rem + 1vw);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #367edf;
+  color: #fff;
+  outline: none;
+  border: 0;
+  -webkit-transition: 0.3s ease-out all;
+  transition: 0.3s ease-out all;
+}
+
+.scroll-top-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  background-color: #e9f3d9;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+  background-color: #e9f3d9;
+}
+
 .footer {
   background-color: #e9f3d9;
   width: 100%;
   padding: 1.25em;
+}
+
+body.dark .footer {
+  background: #333;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+body.dark .footer p {
+  color: #fff;
 }
 
 .footer__social-network {
@@ -793,7 +915,6 @@ p {
   display: block;
   width: 3.75em;
   height: 3.75em;
-  background-color: #000;
   color: #fff;
   margin: 1.25em;
   text-align: center;
@@ -803,7 +924,7 @@ p {
 }
 
 .footer__fb i, .footer__platzi i, .footer__github i {
-  font-size: 1.25em;
+  font-size: 1.5em;
   line-height: 3.75rem;
 }
 
@@ -813,6 +934,11 @@ p {
 
 .footer__github {
   background-color: #333;
+}
+
+body.dark .footer__github {
+  background: #000;
+  color: #fff;
 }
 
 .footer__platzi {

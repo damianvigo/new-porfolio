@@ -7,10 +7,14 @@
   bottom: 0;
   right: 0;
   left: 0;
-  transition: transform 0.3s ease;
-  transform: translate(0, -100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translate(-100%, 0%);
   &.is-active {
     transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
   }
   &__menu {
     width: inherit;
@@ -49,5 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-primary;
+  background-color: $color-boton;
+  color: $color-light;
+  outline: none;
 }
