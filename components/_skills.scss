@@ -1,5 +1,14 @@
 .skills {
   padding-bottom: 50px;
+  body.dark & {
+    background: $color-variant;
+    &__title {
+      color: $color-light;
+    }
+    .skills-container {
+      color: $color-light;
+    }
+  }
   @include box-green-light;
   &__title {
     @include title($Font2);

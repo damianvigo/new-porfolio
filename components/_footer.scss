@@ -3,7 +3,7 @@
   width: 100%;
   padding: 1.25em;
   body.dark & {
-    background: $color-primary;
+    background: $color-variant;
     box-shadow: $sombraLight;
     p {
       color: $color-light;
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 1.25em;
     flex-wrap: wrap;
   }
   &__fb,
@@ -25,11 +25,11 @@
     color: #fff;
     margin: 1.25em;
     text-align: center;
-    border-radius: 100px;
+    border-radius: 6.25em;
     transition: 0.3s ease all;
     i {
       font-size: 1.5em;
-      line-height: 3.75rem;
+      line-height: 2.5em;
     }
   }
   &__fb {
@@ -38,7 +38,7 @@
   &__github {
     background-color: $color-primary;
     body.dark & {
-      background: $color-variant;
+      background: $color-dark;
       color: $color-light;
     }
   }
@@ -59,7 +59,7 @@
     }
   }
   &__author {
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
     text-align: center;
     color: $color-variant;
     @include title($Font1);

@@ -1,17 +1,25 @@
-.proyects {
-  background-color: transparent;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  &__title {
-    margin: 0 auto;
-    text-align: center;
-  }
-  &__title-head {
+.title {
+  text-align: center;
+  margin-top: 12.5em;
+  &__proyects {
+    width: 100%;
     font-size: 2.1875em;
-    margin: 50px 0;
     @include title($Font2);
     @include box;
+    body.dark & {
+      background: $color-variant;
+      color: $color-light;
+    }
   }
+}
+
+.container-proyects {
+  background: $color-variant;
+  margin-top: 90px;
+}
+
+.proyects {
+  width: 100%;
   &__container {
     max-width: 1500px;
     margin: auto;
@@ -19,24 +27,51 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 50px;
     align-items: flex-end;
-    margin: 150px 0;
+  }
+  &__images__thumbnail {
+    width: 100%;
+    margin: 50px 0;
   }
   &__images__img {
     width: 100%;
     vertical-align: top;
+    opacity: 0.7;
+    cursor: pointer;
+    animation: scale-img;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: all 0.3s ease;
+    &:hover {
+      opacity: 1;
+    }
   }
   &__description {
     text-align: center;
     display: block;
-    margin: 1.25em 0;
-    font-size: 1em;
+    margin: 0.7em 0;
+    @include title($Font1);
+    font-weight: 700;
+  }
+  &__technology {
+    text-align: center;
+    color: $color-light;
+    font-size: 0.875em;
   }
   &__icon {
-    font-size: 1.875em;
     @include proyect-icon;
   }
   &__container-link {
     display: flex;
     justify-content: center;
+  }
+  @keyframes scale-img {
+    0% {
+      transform: sclale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
   }
 }

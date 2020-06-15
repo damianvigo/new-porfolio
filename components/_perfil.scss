@@ -3,10 +3,21 @@
 }
 
 .perfil {
-  background-color: #cccccc;
   width: 100vw;
   margin: 0px auto;
   padding: 50px 0;
+  body.dark & {
+    background: $color-variant;
+    &__title-me {
+      color: $color-light;
+    }
+    &__description-me {
+      color: $color-light;
+    }
+    &__text-me {
+      color: $color-light;
+    }
+  }
   @include box;
   &__title-me {
     text-align: center;

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px;
+  padding: 4.37em;
 }
 
 .button {
@@ -10,12 +10,15 @@
   display: block;
   position: relative;
   padding: 0.5em 2.2em;
-  font-size: 25px;
+  font-size: 1.56em;
   background-color: transparent;
   cursor: pointer;
   user-select: none;
   color: royalblue;
   overflow: hidden;
+  body.dark & {
+    color: $color-light;
+  }
   &:hover {
     color: #fff;
   }
@@ -28,6 +31,9 @@
     background: transparent;
     z-index: -1;
     border: 5px solid royalblue;
+    body.dark & {
+      border: 5px solid $color-variant;
+    }
     &::before {
       content: '';
       position: absolute;
@@ -38,6 +44,9 @@
       left: 50%;
       transform: translate(-50%, -50%) rotate(-60deg);
       transition: all 0.3s;
+      body.dark & {
+        background: $color-primary;
+      }
     }
   }
 }
@@ -47,6 +56,9 @@
   transform: translate(-50%, -50%) rotate(-90deg);
   width: 100%;
   background: royalblue;
+  body.dark & {
+    background: $color-variant;
+  }
 }
 
 .button:hover,

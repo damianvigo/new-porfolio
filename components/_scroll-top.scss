@@ -14,7 +14,8 @@
   border: 0;
   transition: 0.3s ease-out all;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: $color-secundary;
+    color: $color-primary;
   }
 }
 

@@ -47,11 +47,6 @@
         font-size: 2em;
       }
     }
-
-    .container {
-      grid-template-areas: 'container   container   container';
-    }
-
     .header {
       &__menu-ul {
         display: flex;

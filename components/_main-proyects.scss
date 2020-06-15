@@ -1,5 +1,10 @@
 .main-title-proyects {
   &__title {
+    margin-bottom: 5.625em;
+    body.dark & {
+      background: $color-variant;
+      color: $color-light;
+    }
     text-align: center;
     @include title($Font2);
     @include box;
@@ -12,6 +17,22 @@
   justify-content: center;
   width: 100%;
   margin: 0 auto;
+  body.dark & {
+    color: $color-light;
+    background: $color-variant;
+    &__container {
+      background: $sombraLight;
+    }
+    &__description {
+      color: $color-light;
+    }
+    &__repo--git {
+      color: $color-light;
+    }
+    &__repo--globe {
+      color: $color-light;
+    }
+  }
 
   &__container {
     margin: 40px 0;
