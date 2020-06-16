@@ -4,12 +4,17 @@ import scrollTopButton from './modules/scroll-boton.js';
 import darkMode from './modules/darkMode.js';
 
 const d = document;
+const w = window;
 
 d.addEventListener('DOMContentLoaded', (e) => {
   sticky('.header');
   hamburguerMenu('.panel-btn', '.panel', '.panel__menu-a');
   scrollTopButton('.scroll-top-btn');
   darkMode('#switch');
+});
+
+w.addEventListener('load', function () {
+  Grade(document.querySelectorAll('.more__proyects'));
 });
 
 const overlay = document.getElementById('overlay');

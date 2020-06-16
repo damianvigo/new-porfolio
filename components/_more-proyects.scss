@@ -1,0 +1,46 @@
+.more-title {
+  @include box;
+  margin: 90px 0;
+  body.dark & {
+    background-color: $color-variant;
+    &__proyects {
+      color: $color-light;
+    }
+  }
+  &__proyects {
+    @include title($Font2);
+  }
+}
+
+.more {
+  position: relative;
+
+  &__proyects {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &--img {
+    max-width: 30%;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+    margin: 50px 0;
+  }
+  &__description {
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__p {
+    margin: 0.7em 0;
+    color: $color-light;
+    @include title($Font1);
+    font-weight: 700;
+  }
+  &--icon {
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+}

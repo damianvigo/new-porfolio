@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
   <link rel="stylesheet" href="../normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
   <link rel="stylesheet" href="../css/styles.css">
@@ -37,7 +37,7 @@
     </nav>
   </aside>
 
-  <button class="panel-btn hamburger hamburger--vortex" type="button">
+  <button class="panel-btn hamburger hamburger--vortex hidden" type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
@@ -48,7 +48,7 @@
   <section class="overlay" id="overlay">
     <div class="overlay__container-img">
       <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-      <img class="overlay__img" src="" alt="">
+      <img class="overlay__img" src="empty" alt="">
     </div>
     <p class="overlay__description"></p>
   </section>
@@ -58,13 +58,14 @@
     <article class="title">
       <h2 class="title__proyects">Proyectos</h2>
     </article>
-    <div class="container-proyects">
+    <section class="container-proyects">
       <div class="container">
         <section class="proyects">
           <article class="proyects__images">
             <figure class="proyects__container">
               <div class="proyects__images__thumbnail" data-description="Red Social en Svelte">
-                <img class="proyects__images__img" src="../img/svelte-pugstagram.jpg" alt="">
+                <img class="proyects__images__img" src="../img/svelte-pugstagram.jpg" loading="lazy"
+                  title="Red social en Svelte" alt="Una red social hecha en Svelte">
                 <fig-caption class="proyects__description">Svelte</fig-caption>
                 <p class="proyects__technology">Framework</p>
                 <div class="proyects__container-link">
@@ -76,7 +77,8 @@
                 </div>
               </div>
               <div class="proyects__images__thumbnail" data-description="CRUD de artículos en Angular">
-                <img class="proyects__images__img" src="../img/proyecto-angular.png" alt="">
+                <img class="proyects__images__img" src="../img/proyecto-angular.png" loading="lazy"
+                  title="Blog en Angular" alt="Un blog hecho en Angular">
                 <fig-caption class="proyects__description">Angular</fig-caption>
                 <p class="proyects__technology">Framework</p>
                 <div class="proyects__container-link">
@@ -87,7 +89,8 @@
                 </div>
               </div>
               <div class="proyects__images__thumbnail" data-description="CRUD de Artículos en React">
-                <img class="proyects__images__img" src="../img/proyecto-react.png" alt="">
+                <img class="proyects__images__img" src="../img/proyecto-react.png" loading="lazy" title="Blog en React"
+                  alt="Un blog hecho en React">
                 <fig-caption class="proyects__description">React</fig-caption>
                 <p class="proyects__technology">Librería</p>
                 <div class="proyects__container-link">
@@ -98,7 +101,8 @@
                 </div>
               </div>
               <div class="proyects__images__thumbnail" data-description="CRUD de Artículos en Vue">
-                <img class="proyects__images__img" src="../img/crear-articulo-vue.jpg" alt="">
+                <img class="proyects__images__img" src="../img/crear-articulo-vue.jpg" loading="lazy"
+                  title="Blog en Vue" alt="Un blog hecho en Vue">
                 <fig-caption class="proyects__description">Vue</fig-caption>
                 <p class="proyects__technology">Framework</p>
                 <div class="proyects__container-link">
@@ -108,110 +112,125 @@
                   </a>
                 </div>
               </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/tech.jpg" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
+              <div class="proyects__images__thumbnail"
+                data-description="Portal de noticias HTML5 - CSS3(Sass) | Vanilla JS">
+                <img class="proyects__images__img" src="../img" loading="lazy" title="tech-news"
+                  alt="Un portal de noticias de tecnología hecho con HTML5, CSS3 y JavaScript">
+                <fig-caption class="proyects__description">Maquetación</fig-caption>
+                <p class="proyects__technology">HTML - CSS - JavaScript</p>
                 <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
+                  <a class="proyects__link" href="https://tech-news-damian-vigo.web.app/" target="_blank"
+                    rel="noopener"><i class="fas fa-globe  proyects__icon"></i></a>
+                </div>
+              </div>
+              <div class="proyects__images__thumbnail" data-description="Blog - HTML5 - CSS3(Materialize)">
+                <img class="proyects__images__img" src="../img/materialize.jpg" loading="lazy" title="Blog"
+                  alt="Maquetado web de un blog con el framework Materialize">
+                <fig-caption class="proyects__description">Maquetación</fig-caption>
+                <p class="proyects__technology">HTML - CSS</p>
+                <div class="proyects__container-link">
+                  <a class="proyects__link" href="https://github.com/damianvigo/Blog-materialize" target="_blank"
+                    rel="noopener">
                     <i class="fa fa-github proyects__icon"></i>
                   </a>
                 </div>
               </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/materialize.jpg" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
+              <div class="proyects__images__thumbnail" data-description="E-commerce - HTML5 - CSS3(Bootstrap)">
+                <img class="proyects__images__img" src="../img/tienda-bootstrap.jpg" loading="lazy" title="E-commerce"
+                  alt="Maquetación web de una tienda online">
+                <fig-caption class="proyects__description">Maquetación</fig-caption>
+                <p class="proyects__technology">HTML - CSS</p>
                 <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
+                  <a class="proyects__link" href="https://github.com/damianvigo/Tienda-Bootstrap" target="_blank"
+                    rel="noopener">
                     <i class="fa fa-github proyects__icon"></i>
                   </a>
                 </div>
               </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/tienda-bootstrap.jpg" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
+              <div class="proyects__images__thumbnail" data-description="Página de inicio HTML5 - CSS3 - Vanilla JS">
+                <img class="proyects__images__img" src="../img/netflix.png" loading="lazy" title="Netflix"
+                  alt="Maquetación web de la plataforma Netflix">
+                <fig-caption class="proyects__description">Maquetación</fig-caption>
+                <p class="proyects__technology">HTML - CSS - JavaScript</p>
                 <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
+                  <a class="proyects__link" href="https://github.com/damianvigo/sitio-netflix" target="_blank"
+                    rel="noopener">
                     <i class="fa fa-github proyects__icon"></i>
                   </a>
                 </div>
               </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/netflix.png" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
+              <div class="proyects__images__thumbnail"
+                data-description="Diseño de una web en construcción, realizado en photoshop">
+                <img class="proyects__images__img" src="../img/musica-electronica.jpg" loading="lazy"
+                  title="Web en construcción" alt="Web con temática de música electrónica en construcción">
+                <fig-caption class="proyects__description">Diseño</fig-caption>
+                <p class="proyects__technology">Diseño - Web</p>
+              </div>
+              <div class="proyects__images__thumbnail" data-description="Banner, realizado en photoshop">
+                <img class="proyects__images__img" src="../img/banner.jpg" loading="lazy" title="Banner"
+                  alt="Un banner del licor Baileys Irish Cream">
+                <fig-caption class="proyects__description">Diseño</fig-caption>
+                <p class="proyects__technology">Diseño - Web</p>
+              </div>
+              <div class="proyects__images__thumbnail"
+                data-description="Dibujo realizado en photoshop, utilizando las respectivas leyes de Gestalt">
+                <img class="proyects__images__img" src="../img/gato-lineas-planos.jpg" loading="lazy" title="Dibujo"
+                  alt="Boceto de un gato siamés dibujado en photoshop solo con lineas y planos">
+                <fig-caption class="proyects__description">Síntesis Gráfica</fig-caption>
+                <p class="proyects__technology">Diseño</p>
+              </div>
+              <div class="proyects__images__thumbnail"
+                data-description="Dibujo realizado en photoshop, utilizando las respectivas leyes de Gestalt">
+                <img class="proyects__images__img" src="../img/gato-planos-blanco-negro.jpg" loading="lazy"
+                  title="Dibujo" alt="Boceto de un gato siamés dibujado en photoshop solo con planos blanco y negro">
+                <fig-caption class="proyects__description">Síntesis Gráfica</fig-caption>
+                <p class="proyects__technology">Diseño</p>
+              </div>
+              <div class="proyects__images__thumbnail"
+                data-description="Portal de noticas geek HTML5(PUG-BEM) - CSS3(Sass)">
+                <img class="proyects__images__img" src="../img/sitio-geek-portal-sass.jpg" loading="lazy" title="Portal"
+                  alt="Maquetación web de Portal Geek de noticias">
+                <fig-caption class="proyects__description">Maquetación</fig-caption>
+                <p class="proyects__technology">HTML - CSS</p>
                 <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
+                  <a class="proyects__link" href="https://github.com/damianvigo/web-noticias" target="_blank"
+                    rel="noopener">
                     <i class="fa fa-github proyects__icon"></i>
                   </a>
                 </div>
               </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/musica-electronica.jpg" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
+              <div class="proyects__images__thumbnail" data-description="Búsqueda - HTML5(PUG-BEM) - CSS3(Stylus)">
+                <img class="proyects__images__img" src="../img/sitio-geek-busqueda-stylus.jpg" loading="lazy"
+                  title="Búsqueda" alt="Maquetado web de un resultado de búsqueda de una web de tecnología">
+                <fig-caption class="proyects__description">Maquetación</fig-caption>
+                <p class="proyects__technology">HTML - CSS</p>
                 <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
+                  <a class="proyects__link" href="https://github.com/damianvigo/web-stylus" target="_blank"
+                    rel="noopener">
                     <i class="fa fa-github proyects__icon"></i>
                   </a>
                 </div>
               </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/banner.jpg" alt="">
+              <div class="proyects__images__thumbnail" data-description="Blog Post - HTML5(PUG-BEM) - CSS3(Less)">
+                <img class="proyects__images__img" src="../img/sitio-geek-less.jpg" loading="lazy" title="Blog Post"
+                  alt="Diseño de una Web de un restaurante de comida">
                 <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
+                <p class="proyects__technology">HTML - CSS</p>
                 <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
+                  <a class="proyects__link" href="https://github.com/damianvigo/web-less" target="_blank"
+                    rel="noopener">
                     <i class="fa fa-github proyects__icon"></i>
                   </a>
                 </div>
               </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/gato-lineas-planos.jpg" alt="">
+              <div class="proyects__images__thumbnail" data-description="Perfil de usuario - HTML5(PUG-BEM) - CSS3">
+                <img class="proyects__images__img" src="../img/sitio-geek-john-wick.jpg" loading="lazy"
+                  title="Perfil de usuario" alt="Maquetado web de un perfil de usuario">
                 <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
+                <p class="proyects__technology">HTML - CSS</p>
                 <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
-                    <i class="fa fa-github proyects__icon"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/gato-planos-blanco-negro.jpg" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
-                <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
-                    <i class="fa fa-github proyects__icon"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/sitio-geek-portal-sass.jpg" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
-                <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
-                    <i class="fa fa-github proyects__icon"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/sitio-geek-busqueda-stylus.jpg" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
-                <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
-                    <i class="fa fa-github proyects__icon"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/sitio-geek-less.jpg" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
-                <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
-                    <i class="fa fa-github proyects__icon"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="proyects__images__thumbnail" data-description="Lorem ipsum">
-                <img class="proyects__images__img" src="../img/sitio-geek-john-wick.jpg" alt="">
-                <fig-caption class="proyects__description">Maquetación - HTML - CSS</fig-caption>
-                <div class="proyects__container-link">
-                  <a class="proyects__link" href="">
+                  <a class="proyects__link" href="https://github.com/damianvigo/web-noticias" target="_blank"
+                    rel="noopener">
                     <i class="fa fa-github proyects__icon"></i>
                   </a>
                 </div>
@@ -220,7 +239,37 @@
           </article>
         </section>
       </div>
-    </div>
+    </section>
+    <article class="more-title">
+      <h2 class="more-title__proyects">Páginas Web</h2>
+    </article>
+    <section class="more">
+      <div class="more__proyects">
+        <img class="more--img" src=" ../img/blog.jpg" loading="lazy" title="Blog" alt="Un blog hecho para Wordpress">
+        <article class="more__description">
+          <p class="more__p">PHP - Bootstrap</p>
+          <a class="proyects__link more--icon" href="https://github.com/damianvigo/Blog" target="_blank" rel="noopener">
+            <i class="fa fa-github proyects__icon more--icon-i"></i>
+          </a>
+        </article>
+
+      </div>
+      <div class="more__proyects">
+        <img class="more--img" src=" ../img/startup.jpg" loading="lazy" title="Startup" alt="Web de una startup">
+      </div>
+      <div class="more__proyects">
+        <img class="more--img" src=" ../img/wordpress.jpg" loading="lazy" title="Wordpress"
+          alt="Sitio hecho en WordPress con la plantilla oceanwp">
+      </div>
+      <div class="more__proyects">
+        <img class="more--img" src=" ../img/landing1.jpg" loading="lazy" title="Landing-page"
+          alt="Landing Page creada con photoshop">
+      </div>
+      <div class="more__proyects">
+        <img class="more--img" src="../img/landing2.jpg" loading="lazy" title="Landing-page"
+          alt="Landing page de deportes creada con photoshop">
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -246,6 +295,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/grade-js/docs/dist/grade.js"></script>
   <script src="https://kit.fontawesome.com/e36e673736.js" crossorigin="anonymous"></script>
   <script src="../js/index.js" type="module"></script>
 </body>

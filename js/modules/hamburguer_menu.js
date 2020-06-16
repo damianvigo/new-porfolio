@@ -1,5 +1,6 @@
 export default function hamburguerMenu(panelBtn, panel, menuLink) {
   const d = document;
+  const w = window;
 
   d.addEventListener('click', (e) => {
     if (e.target.matches(panelBtn) || e.target.matches(`${panelBtn} *`)) {
@@ -10,6 +11,17 @@ export default function hamburguerMenu(panelBtn, panel, menuLink) {
     if (e.target.matches(menuLink)) {
       d.querySelector(panel).classList.remove('is-active');
       d.querySelector(panelBtn).classList.remove('is-active');
+    }
+  });
+
+  w.addEventListener('resize', (e) => {
+    const $btnResponsive = d.querySelector(panelBtn);
+    const windowResize = w.innerWidth;
+
+    if (windowResize < 768) {
+      $btnResponsive.classList.remove('hidden');
+    } else {
+      $btnResponsive.classList.add('hidden');
     }
   });
 }

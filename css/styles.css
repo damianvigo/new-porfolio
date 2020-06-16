@@ -103,6 +103,11 @@ p {
   max-width: 40%;
 }
 
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .hero-image {
   background-image: url("https://placeimg.com/1280/720/nature");
   background-size: cover;
@@ -261,7 +266,7 @@ body.dark .header.sticky ul li a, body.dark
 
 .switch {
   background: #343d5b;
-  border-radius: 1000px;
+  border-radius: 62.5em;
   border: none;
   position: relative;
   cursor: pointer;
@@ -274,16 +279,16 @@ body.dark .header.sticky ul li a, body.dark
 .switch::after {
   content: '';
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 1.875em;
+  height: 1.875em;
   position: absolute;
   background: #f1f1f1;
   top: 0;
   left: 0;
   right: unset;
-  border-radius: 100px;
-  -webkit-transition: 0.3s ease al;
-  transition: 0.3s ease al;
+  border-radius: 6.25em;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -299,9 +304,9 @@ body.dark .header.sticky ul li a, body.dark
 }
 
 .switch__span {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 1.875em;
+  height: 1.875em;
+  line-height: 1.875em;
   display: block;
   background: none;
   color: #fff;
@@ -431,6 +436,7 @@ body.dark .perfil__text-me {
   text-transform: uppercase;
   letter-spacing: 0.43em;
   color: #666;
+  text-align: center;
 }
 
 .perfil__description-me {
@@ -508,6 +514,7 @@ body.dark .skills .skills-container {
   text-transform: uppercase;
   letter-spacing: 0.43em;
   color: #666;
+  text-align: center;
   text-align: center;
   padding-top: 90px;
   margin-top: 50px;
@@ -691,6 +698,7 @@ body.dark .skills .skills-container {
   text-transform: uppercase;
   letter-spacing: 0.43em;
   color: #666;
+  text-align: center;
   -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 5px 9px rgba(0, 0, 0, 0.1);
   color: #666;
@@ -900,12 +908,12 @@ body.dark .button:hover .button__span::before, body.dark
 
 .title__proyects {
   width: 100%;
-  font-size: 2.1875em;
   font-family: "Lato", sans-serif;
   font-size: 1.5625em;
   text-transform: uppercase;
   letter-spacing: 0.43em;
   color: #666;
+  text-align: center;
   -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 5px 9px rgba(0, 0, 0, 0.1);
   color: #666;
@@ -919,8 +927,12 @@ body.dark .title__proyects {
 }
 
 .container-proyects {
-  background: #333;
+  background: #666;
   margin-top: 90px;
+}
+
+body.dark .container-proyects {
+  background: #333;
 }
 
 .proyects {
@@ -1025,6 +1037,80 @@ body.dark .title__proyects {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
+}
+
+.more-title {
+  -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px 9px rgba(0, 0, 0, 0.1);
+  color: #666;
+  background-color: #fff;
+  padding: 90px;
+  margin: 90px 0;
+}
+
+body.dark .more-title {
+  background-color: #333;
+}
+
+body.dark .more-title__proyects {
+  color: #fff;
+}
+
+.more-title__proyects {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5625em;
+  text-transform: uppercase;
+  letter-spacing: 0.43em;
+  color: #666;
+  text-align: center;
+}
+
+.more {
+  position: relative;
+}
+
+.more__proyects {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.more--img {
+  max-width: 30%;
+  -webkit-box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  vertical-align: top;
+  margin: 50px 0;
+}
+
+.more__description {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.more__p {
+  margin: 0.7em 0;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.more--icon {
+  display: inline-block;
+  padding-bottom: 20px;
 }
 
 .sidebar {
@@ -1227,6 +1313,7 @@ body.dark .footer__github {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: none;
   }
   .hero-image__img-perfil--img {
     width: 100px;

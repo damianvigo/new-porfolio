@@ -41,7 +41,7 @@ $sombraLight: 10px 10px 20px rgba(0, 0, 0, 0.16);
   background-color: $color-secundary;
 }
 
-// ej @include title($font1);
+// ej @include title($Font1);
 @mixin title($font) {
   @if $font==$Font1 {
     font-family: $Font1;
@@ -52,6 +52,7 @@ $sombraLight: 10px 10px 20px rgba(0, 0, 0, 0.16);
     text-transform: uppercase;
     letter-spacing: 0.43em;
     color: $color-primary;
+    text-align: center;
   }
 }
 
@@ -146,4 +147,9 @@ p {
     border-radius: 6.87em;
     max-width: 40%;
   }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }

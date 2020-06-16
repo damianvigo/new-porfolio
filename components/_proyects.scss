@@ -3,7 +3,6 @@
   margin-top: 12.5em;
   &__proyects {
     width: 100%;
-    font-size: 2.1875em;
     @include title($Font2);
     @include box;
     body.dark & {
@@ -14,8 +13,11 @@
 }
 
 .container-proyects {
-  background: $color-variant;
+  background: $color-primary;
   margin-top: 90px;
+  body.dark & {
+    background: $color-variant;
+  }
 }
 
 .proyects {
@@ -75,3 +77,4 @@
     }
   }
 }
+
