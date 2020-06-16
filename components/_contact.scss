@@ -1,0 +1,71 @@
+.contact {
+  text-align: center;
+  margin-top: 12.5em;
+  &__container-title {
+    margin-bottom: 3.125em;
+  }
+  &__title {
+    width: 100%;
+    @include title($Font2);
+    @include box;
+    body.dark & {
+      background: $color-variant;
+      color: $color-light;
+    }
+  }
+}
+
+.form-background {
+  background-image: url('../img/contact-me.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__transparent {
+    min-height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+  &__text {
+    display: block;
+    width: 100%;
+    margin: 106px 0;
+    border: 0;
+    background: $color-variant;
+    color: $color-light;
+    padding: 20px 40px;
+    outline: none;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: 0 0 10px 4px $color-boton;
+    }
+  }
+  &__textarea {
+    resize: none;
+    height: 120px;
+  }
+  &__btn {
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: $color-light;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      background: $color-boton;
+    }
+  }
+}

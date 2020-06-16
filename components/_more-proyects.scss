@@ -1,6 +1,6 @@
 .more-title {
   @include box;
-  margin: 90px 0;
+  margin: 5.625em 0;
   body.dark & {
     background-color: $color-variant;
     &__proyects {
@@ -39,8 +39,14 @@
     @include title($Font1);
     font-weight: 700;
   }
+  &--p {
+    color: $color-light;
+    @include title($Font1);
+    font-weight: 700;
+    margin-bottom: 3.125em;
+  }
   &--icon {
     display: inline-block;
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
   }
 }

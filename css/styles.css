@@ -1045,7 +1045,7 @@ body.dark .container-proyects {
   color: #666;
   background-color: #fff;
   padding: 90px;
-  margin: 90px 0;
+  margin: 5.625em 0;
 }
 
 body.dark .more-title {
@@ -1108,9 +1108,116 @@ body.dark .more-title__proyects {
   font-weight: 700;
 }
 
+.more--p {
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 3.125em;
+}
+
 .more--icon {
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 12.5em;
+}
+
+.contact__container-title {
+  margin-bottom: 3.125em;
+}
+
+.contact__title {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5625em;
+  text-transform: uppercase;
+  letter-spacing: 0.43em;
+  color: #666;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px 9px rgba(0, 0, 0, 0.1);
+  color: #666;
+  background-color: #fff;
+  padding: 90px;
+}
+
+body.dark .contact__title {
+  background: #333;
+  color: #fff;
+}
+
+.form-background {
+  background-image: url("../img/contact-me.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-background__transparent {
+  min-height: inherit;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form__text {
+  display: block;
+  width: 100%;
+  margin: 106px 0;
+  border: 0;
+  background: #333;
+  color: #fff;
+  padding: 20px 40px;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact-form__text:hover {
+  -webkit-box-shadow: 0 0 10px 4px #367edf;
+          box-shadow: 0 0 10px 4px #367edf;
+}
+
+.contact-form__textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form__btn {
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact-form__btn:hover {
+  background: #367edf;
 }
 
 .sidebar {
