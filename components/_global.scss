@@ -85,7 +85,7 @@ body {
   @include title($Font1);
   overflow-x: hidden;
   transition: 0.3s ease all;
-  color: $color-light;
+  color: $color-primary;
   &.dark {
     background: $color-primary;
   }

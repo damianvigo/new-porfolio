@@ -2,6 +2,7 @@
   background-color: $color-secundary;
   width: 100%;
   padding: 1.25em;
+  transition: 0.3s ease all;
   body.dark & {
     background: $color-variant;
     box-shadow: $sombraLight;

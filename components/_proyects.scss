@@ -5,6 +5,7 @@
     width: 100%;
     @include title($Font2);
     @include box;
+    transition: 0.3s ease all;
     body.dark & {
       background: $color-variant;
       color: $color-light;
@@ -15,6 +16,7 @@
 .container-proyects {
   background: $color-primary;
   margin-top: 90px;
+  transition: 0.3s ease all;
   body.dark & {
     background: $color-variant;
   }
@@ -77,4 +79,3 @@
     }
   }
 }
-

@@ -1,6 +1,8 @@
 .main-title-proyects {
   &__title {
+    transition: 0.3s ease all;
     margin-bottom: 5.625em;
+    color: black;
     body.dark & {
       background: $color-variant;
       color: $color-light;
@@ -12,11 +14,13 @@
 }
 
 .main-proyects {
+  background-color: $color-secundary;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
+  transition: 0.3s ease all;
   body.dark & {
     color: $color-light;
     background: $color-variant;
@@ -42,7 +46,7 @@
   &__description {
     margin: 0 auto;
     margin-top: 20px;
-    width: 50%;
+    width: 40%;
     line-height: 1.25em;
   }
   &__mockup {
@@ -66,8 +70,10 @@
   &__repo--git {
     margin-right: 10px;
     @include proyect-icon;
+    color: $color-variant;
   }
   &__repo--globe {
     @include proyect-icon;
+    color: $color-variant;
   }
 }

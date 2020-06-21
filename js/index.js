@@ -2,6 +2,7 @@ import sticky from './modules/sticky_footer.js';
 import hamburguerMenu from './modules/hamburguer_menu.js';
 import scrollTopButton from './modules/scroll-boton.js';
 import darkMode from './modules/darkMode.js';
+import scrollParallax from './modules/scroll_parallax.js';
 
 const d = document;
 const w = window;
@@ -11,6 +12,7 @@ d.addEventListener('DOMContentLoaded', (e) => {
   hamburguerMenu('.panel-btn', '.panel', '.panel__menu-a');
   scrollTopButton('.scroll-top-btn');
   darkMode('#switch');
+  scrollParallax('.hero-image__perfil');
 });
 
 w.addEventListener('load', function () {

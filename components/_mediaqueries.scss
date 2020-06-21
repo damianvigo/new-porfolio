@@ -3,6 +3,12 @@
     font-size: 14px;
   }
 
+  .overlay {
+    &__description {
+      width: 100%;
+    }
+  }
+
   .hero-image {
     &__title {
       font-size: 4.375em;
@@ -14,6 +20,9 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+    &__description {
+      width: 100%;
+    }
     &__flex-order-1 {
       order: 0;
     }
@@ -74,6 +83,18 @@
     &__description-me {
       width: 100%;
       line-height: 1.25rem;
+    }
+  }
+
+  @media (max-width: 365px) {
+    body {
+      font-size: 9px;
+    }
+
+    .perfil {
+      &__title-me {
+        font-size: 0.6rem;
+      }
     }
   }
 }

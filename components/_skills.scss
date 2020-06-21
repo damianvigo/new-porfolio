@@ -1,5 +1,6 @@
 .skills {
   padding-bottom: 50px;
+  transition: 0.3s ease all;
   body.dark & {
     background: $color-variant;
     &__title {

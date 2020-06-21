@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  color: #fff;
+  color: #666;
 }
 
 body.dark {
@@ -109,7 +109,7 @@ p {
 }
 
 .hero-image {
-  background-image: url("https://placeimg.com/1280/720/nature");
+  background-image: url("../img/back-hero-image.jpg");
   background-size: cover;
   color: #fff;
   min-height: 100vh;
@@ -260,7 +260,7 @@ body.dark .header.sticky ul li a, body.dark
   height: 1px;
 }
 
-.two-page-header {
+.other-page {
   background: #666666;
 }
 
@@ -405,6 +405,8 @@ body.dark .header.sticky ul li a, body.dark
   width: 100vw;
   margin: 0px auto;
   padding: 50px 0;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 5px 9px rgba(0, 0, 0, 0.1);
   color: #666;
@@ -490,6 +492,8 @@ body.dark .perfil__text-me {
 
 .skills {
   padding-bottom: 50px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   -webkit-box-shadow: 20px 20px 13px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 20px 20px 13px 0px rgba(0, 0, 0, 0.2);
   color: #666;
@@ -691,7 +695,10 @@ body.dark .skills .skills-container {
 }
 
 .main-title-proyects__title {
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   margin-bottom: 5.625em;
+  color: black;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 1.5625em;
@@ -712,6 +719,7 @@ body.dark .main-title-proyects__title {
 }
 
 .main-proyects {
+  background-color: #e9f3d9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,6 +731,8 @@ body.dark .main-title-proyects__title {
           justify-content: center;
   width: 100%;
   margin: 0 auto;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark .main-proyects {
@@ -757,7 +767,7 @@ body.dark .main-proyects__repo--globe {
 .main-proyects__description {
   margin: 0 auto;
   margin-top: 20px;
-  width: 50%;
+  width: 40%;
   line-height: 1.25em;
 }
 
@@ -794,6 +804,7 @@ body.dark .main-proyects__repo--globe {
   margin-top: 0.93rem;
   opacity: 0.5;
   margin-left: 0.625rem;
+  color: #333;
 }
 
 .main-proyects__repo--git:hover {
@@ -807,6 +818,7 @@ body.dark .main-proyects__repo--globe {
   margin-top: 0.93rem;
   opacity: 0.5;
   margin-left: 0.625rem;
+  color: #333;
 }
 
 .main-proyects__repo--globe:hover {
@@ -840,6 +852,7 @@ body.dark .main-proyects__repo--globe {
           user-select: none;
   color: royalblue;
   overflow: hidden;
+  text-decoration: none;
 }
 
 body.dark .button {
@@ -919,6 +932,8 @@ body.dark .button:hover .button__span::before, body.dark
   color: #666;
   background-color: #fff;
   padding: 90px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark .title__proyects {
@@ -929,6 +944,8 @@ body.dark .title__proyects {
 .container-proyects {
   background: #666;
   margin-top: 90px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark .container-proyects {
@@ -1143,6 +1160,8 @@ body.dark .more-title__proyects {
   color: #666;
   background-color: #fff;
   padding: 90px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark .contact__title {
@@ -1220,11 +1239,6 @@ body.dark .contact__title {
   background: #367edf;
 }
 
-.sidebar {
-  margin: 0;
-  padding: 0;
-}
-
 .scroll-top-btn {
   position: fixed;
   z-index: 999;
@@ -1244,8 +1258,8 @@ body.dark .contact__title {
 }
 
 .scroll-top-btn:hover {
-  background-color: #e9f3d9;
-  color: #666;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
 }
 
 .hidden {
@@ -1269,6 +1283,8 @@ body.dark .contact__title {
   background-color: #e9f3d9;
   width: 100%;
   padding: 1.25em;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark .footer {
@@ -1369,6 +1385,9 @@ body.dark .footer__github {
   body {
     font-size: 14px;
   }
+  .overlay__description {
+    width: 100%;
+  }
   .hero-image__title {
     font-size: 4.375em;
   }
@@ -1382,6 +1401,9 @@ body.dark .footer__github {
             flex-direction: column;
     margin: 0;
     padding: 0;
+  }
+  .main-proyects__description {
+    width: 100%;
   }
   .main-proyects__flex-order-1 {
     -webkit-box-ordinal-group: 1;
@@ -1440,6 +1462,15 @@ body.dark .footer__github {
   .perfil__description-me {
     width: 100%;
     line-height: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 365px) {
+  body {
+    font-size: 9px;
+  }
+  .perfil__title-me {
+    font-size: 0.6rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
