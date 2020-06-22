@@ -56,6 +56,7 @@
     display: block;
     margin: 0.7em 0;
     @include title($Font1);
+    color: $color-light;
     font-weight: 700;
   }
   &__technology {

@@ -48,6 +48,12 @@
       font-size: 12px;
     }
 
+    .more {
+      &--img {
+        max-width: 70%;
+      }
+    }
+
     .hero-image {
       &__title {
         font-size: 2.5em;
@@ -74,6 +80,12 @@
   @media (max-width: 576px) {
     body {
       font-size: 11px;
+    }
+
+    .more {
+      &--img {
+        max-width: 90%;
+      }
     }
   }
   .perfil {
