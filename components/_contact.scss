@@ -41,7 +41,7 @@
   &__text {
     display: block;
     width: 100%;
-    margin: 6.625em 0;
+    margin: 6.625em 0 0 0;
     border: 0;
     background: $color-variant;
     color: $color-light;
@@ -84,8 +84,9 @@
 }
 
 .contact-form-error {
-  margin-top: -1rem;
-  font-size: 80%;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
   background-color: $color-form-error;
   color: $color-light;
   transition: all 800ms ease;

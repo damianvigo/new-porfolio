@@ -1205,7 +1205,7 @@ body.dark .contact__title {
 .contact-form__text {
   display: block;
   width: 100%;
-  margin: 6.625em 0;
+  margin: 6.625em 0 0 0;
   border: 0;
   background: #333;
   color: #fff;
@@ -1264,8 +1264,9 @@ body.dark .contact__title {
 }
 
 .contact-form-error {
-  margin-top: -1rem;
-  font-size: 80%;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
   background-color: #f44336;
   color: #fff;
   -webkit-transition: all 800ms ease;
