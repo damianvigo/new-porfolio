@@ -34,39 +34,79 @@
 }
 
 .contact-form {
-  max-width: 600px;
+  max-width: 37.5em;
   margin: auto;
-  padding: 0 10px;
+  padding: 0 0.625em;
   overflow: hidden;
   &__text {
     display: block;
     width: 100%;
-    margin: 106px 0;
+    margin: 6.625em 0;
     border: 0;
     background: $color-variant;
     color: $color-light;
-    padding: 20px 40px;
+    padding: 1.25em 2.5em;
     outline: none;
     transition: 0.5s;
-    &:hover {
-      box-shadow: 0 0 10px 4px $color-boton;
-    }
+    // &:hover {
+    //   box-shadow: 0 0 0.625em 0.25em $color-boton;
+    // }
   }
   &__textarea {
     resize: none;
-    height: 120px;
+    height: 7.5em;
   }
   &__btn {
-    float: right;
     border: 0;
     background: #34495e;
     color: $color-light;
-    padding: 12px 50px;
-    border-radius: 20px;
+    padding: 0.75em 3.125em;
+    border-radius: 1.25em;
     cursor: pointer;
     transition: 0.5s;
     &:hover {
       background: $color-boton;
     }
+  }
+  &__loader {
+    margin: 3.125em 0;
+  }
+  *::placeholder {
+    color: $color-light;
+  }
+  /* Valid e invalid */
+  [required]:valid {
+    border: thin solid $color-form-ok;
+  }
+  [required]:invalid {
+    border: thin solid $color-form-error;
+  }
+}
+
+.contact-form-error {
+  margin-top: -1rem;
+  font-size: 80%;
+  background-color: $color-form-error;
+  color: $color-light;
+  transition: all 800ms ease;
+}
+
+.contact-form-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none {
+  display: none;
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
   }
 }

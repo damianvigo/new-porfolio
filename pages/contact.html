@@ -60,11 +60,23 @@
       <div class="form-background">
         <div class="form-background__transparent">
           <form class="contact-form" action="" method="post">
-            <input type="text" class="contact-form__text" placeholder="Tu nombre" autofocus disabled>
-            <input type="email" class="contact-form__text" placeholder="Tu email" disabled>
-            <input type="text" class="contact-form__text" placeholder="Asunto" disabled>
-            <textarea class="contact-form__text" placeholder="Tu comentario" disabled></textarea>
-            <input type="submit" class="contact-form__btn" value="Envíar" disabled>
+            <input type="text" name="name" title="El nombre sólo acepta letras y espacios en blanco"
+              class="contact-form__text" placeholder="Tu nombre" autofocus required
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" />
+            <input type="email" name="email" title="Email incorrecto" required class="contact-form__text"
+              placeholder="Tu email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" />
+            <input type="text" name="subject" required title="El Asunto es requerido" class="contact-form__text"
+              placeholder="Asunto" />
+            <textarea name="comments" cols="50" rows="5" class="contact-form__text contact-form__textarea"
+              placeholder="Tu comentario" title="Tu comentario no debe exceder los 255 caracteres"
+              data-pattern="^.{1,255}$" required></textarea>
+            <input type="submit" class="contact-form__btn" value="Envíar" />
+            <div class="contact-form__loader none">
+              <img src="../img/puff.svg" alt="Cargando">
+            </div>
+            <div class="contact-form__response none">
+              <p>Los datos han sido enviados</p>
+            </div>
           </form>
         </div>
       </div>
