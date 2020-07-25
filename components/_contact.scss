@@ -22,7 +22,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +64,7 @@
     border-radius: 1.25em;
     cursor: pointer;
     transition: 0.5s;
+    margin: 3.125em 0;
     &:hover {
       background: $color-boton;
     }
@@ -76,10 +77,15 @@
   }
   /* Valid e invalid */
   [required]:valid {
-    border: thin solid $color-form-ok;
+    border: 2.2px solid $color-form-ok;
   }
   [required]:invalid {
     border: thin solid $color-form-error;
+  }
+  &__response p {
+    color: $color-light;
+    font-size: 20px;
+    margin-top: 30px;
   }
 }
 

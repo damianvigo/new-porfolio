@@ -1176,7 +1176,7 @@ body.dark .contact__title {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1229,6 +1229,7 @@ body.dark .contact__title {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin: 3.125em 0;
 }
 
 .contact-form__btn:hover {
@@ -1256,11 +1257,17 @@ body.dark .contact__title {
 }
 
 .contact-form [required]:valid {
-  border: thin solid #4caf50;
+  border: 2.2px solid #4caf50;
 }
 
 .contact-form [required]:invalid {
   border: thin solid #f44336;
+}
+
+.contact-form__response p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 30px;
 }
 
 .contact-form-error {
